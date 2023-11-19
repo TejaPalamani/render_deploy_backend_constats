@@ -1,0 +1,67 @@
+GET http://localhost:3000/api/contact/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdDIiLCJpZCI6IjY1NTkxNjNjZmY0ZmUyZmQzZTg3MTgyYSIsImVtYWlsIjoidGVzdDJAZXNmLmNvbSIsImlhdCI6MTcwMDMzNzI5MCwiZXhwIjoxNzAwMzQwNjUwfQ.xsACAeKG4t0wQK81XUrfRCB8kwutrfASfWulhwlQoT8
+
+###
+
+GET http://localhost:3000/api/contact/65573cbae37855ec2f018664
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVqYSIsImlkIjoiNjU1OGY3ZGE3MWFjMGY3NTc2MmQxNTI2IiwiZW1haWwiOiJyZXN0QGYuY29tIiwiaWF0IjoxNzAwMzMzODQwLCJleHAiOjE3MDAzMzcyMDB9.JZZjurypjOltYvKglipltgo2kw8-r3RVsNaD8bPrtwQ
+
+
+###
+POST http://localhost:3000/api/contact/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdDIiLCJpZCI6IjY1NTkxNjNjZmY0ZmUyZmQzZTg3MTgyYSIsImVtYWlsIjoidGVzdDJAZXNmLmNvbSIsImlhdCI6MTcwMDMzNzI5MCwiZXhwIjoxNzAwMzQwNjUwfQ.xsACAeKG4t0wQK81XUrfRCB8kwutrfASfWulhwlQoT8
+Content-Type: application/json
+
+{
+    "name":"contact2",
+    "phoneNumber":"55667711725",
+    "email":"contact2@y.com"
+}
+
+
+###
+
+
+PUT http://localhost:3000/api/contact/655917b1372fe673fdad7640
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdDIiLCJpZCI6IjY1NTkxNjNjZmY0ZmUyZmQzZTg3MTgyYSIsImVtYWlsIjoidGVzdDJAZXNmLmNvbSIsImlhdCI6MTcwMDMzNzI5MCwiZXhwIjoxNzAwMzQwNjUwfQ.xsACAeKG4t0wQK81XUrfRCB8kwutrfASfWulhwlQoT8
+Content-Type: application/json
+
+{
+    "phoneNumber":"12444571"
+    
+}
+
+
+###
+
+DELETE http://localhost:3000/api/contact/655918901e4f00730e3ff92c
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVzdDIiLCJpZCI6IjY1NTkxNjNjZmY0ZmUyZmQzZTg3MTgyYSIsImVtYWlsIjoidGVzdDJAZXNmLmNvbSIsImlhdCI6MTcwMDMzNzI5MCwiZXhwIjoxNzAwMzQwNjUwfQ.xsACAeKG4t0wQK81XUrfRCB8kwutrfASfWulhwlQoT8
+  
+###
+
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+    "name":"test2",
+    "email":"test2@esf.com",
+    "password":"12345"
+}
+
+###
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+     "email":"test2@esf.com",
+    "password":"12345"
+}
+####
+
+get http://localhost:3000/api/user/curent
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGVqYSIsImlkIjoiNjU1OGY3ZGE3MWFjMGY3NTc2MmQxNTI2IiwiZW1haWwiOiJyZXN0QGYuY29tIiwiaWF0IjoxNzAwMzMyODEyLCJleHAiOjE3MDAzMzM3NzJ9.huyxeZH5qlfbMssToIpvm6eFSTF-ysYaIdiXflfdVz0
+Content-Type: application/json
+
+####
+get http://localhost:3000/api/user/curent
+Content-Type: application/json
