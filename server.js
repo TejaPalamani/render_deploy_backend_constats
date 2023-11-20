@@ -19,6 +19,8 @@ app.listen(port , () => {
 app.use("/api/contact", require("./routes/contactRoutes") )
 app.use("/api/user", require("./routes/userRoute"))
 
-
+app.get("/", async(req, res) => {
+    res.send("hello wolrd")
+})
 
 dbConnection()
